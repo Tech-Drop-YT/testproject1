@@ -1,0 +1,59 @@
+name: solvex
+description: A modern, feature-rich calculator app with scientific functions and history.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.7.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State Management
+  provider: ^6.1.2
+
+  # Local Storage
+  shared_preferences: ^2.3.3
+
+  # Google Fonts
+  google_fonts: ^6.2.1
+
+  # Math Expressions
+  math_expressions: ^2.6.0
+
+  # Icons
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+  # Splash Screen
+  flutter_native_splash: ^2.4.2
+
+  # App Icon
+  flutter_launcher_icons: ^0.14.1
+
+flutter:
+  uses-material-design: true
+
+# Splash Screen Configuration
+flutter_native_splash:
+  color: "#2962FF"
+  image: assets/splash_logo.png
+  android: true
+  ios: true
+  web: false
+  android_12:
+    color: "#2962FF"
+    image: assets/splash_logo.png
+
+# App Icon Configuration
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/app_icon.png"
+  adaptive_icon_background: "#2962FF"
+  adaptive_icon_foreground: "assets/app_icon_foreground.png"
