@@ -1,0 +1,832 @@
+{
+  "messages": [
+    {
+      "id": "start_1",
+      "context": "timer_start",
+      "tone": "energetic",
+      "message": "You got this — 25 minutes of focused progress! 🔥"
+    },
+    {
+      "id": "start_2",
+      "context": "timer_start",
+      "tone": "energetic",
+      "message": "Small steps = big wins — start now!"
+    },
+    {
+      "id": "start_3",
+      "context": "timer_start",
+      "tone": "energetic",
+      "message": "Let's crush this! Focus mode activated 💪"
+    },
+    {
+      "id": "start_4",
+      "context": "timer_start",
+      "tone": "energetic",
+      "message": "Time to make magic happen! ✨"
+    },
+    {
+      "id": "start_5",
+      "context": "timer_start",
+      "tone": "energetic",
+      "message": "Your future self will thank you for this!"
+    },
+    {
+      "id": "start_6",
+      "context": "timer_start",
+      "tone": "conservative",
+      "message": "Starting timer. Stay focused."
+    },
+    {
+      "id": "start_7",
+      "context": "timer_start",
+      "tone": "conservative",
+      "message": "25 minutes of dedicated work begins now."
+    },
+    {
+      "id": "start_8",
+      "context": "timer_start",
+      "tone": "conservative",
+      "message": "Focus session started. You can do this."
+    },
+    {
+      "id": "start_9",
+      "context": "timer_start",
+      "tone": "energetic",
+      "message": "Sprint time! Ready, set, focus! 🚀"
+    },
+    {
+      "id": "start_10",
+      "context": "timer_start",
+      "tone": "energetic",
+      "message": "Distractions? Not today! Let's go!"
+    },
+    {
+      "id": "start_11",
+      "context": "timer_start",
+      "tone": "conservative",
+      "message": "Deep work mode engaged."
+    },
+    {
+      "id": "start_12",
+      "context": "timer_start",
+      "tone": "energetic",
+      "message": "Coffee's hot, timer's ticking — time to shine! ☕"
+    },
+    {
+      "id": "start_13",
+      "context": "timer_start",
+      "tone": "energetic",
+      "message": "Today's productivity champion — that's you!"
+    },
+    {
+      "id": "start_14",
+      "context": "timer_start",
+      "tone": "conservative",
+      "message": "Focus begins. Make these minutes count."
+    },
+    {
+      "id": "start_15",
+      "context": "timer_start",
+      "tone": "energetic",
+      "message": "Momentum starts NOW! 🌟"
+    },
+    {
+      "id": "complete_1",
+      "context": "task_complete",
+      "tone": "energetic",
+      "message": "Nice! Task done — points +10 🎉"
+    },
+    {
+      "id": "complete_2",
+      "context": "task_complete",
+      "tone": "energetic",
+      "message": "Crushed it — take a 3-minute victory stretch!"
+    },
+    {
+      "id": "complete_3",
+      "context": "task_complete",
+      "tone": "energetic",
+      "message": "Boom! That's how it's done! 💥"
+    },
+    {
+      "id": "complete_4",
+      "context": "task_complete",
+      "tone": "energetic",
+      "message": "Another one bites the dust! You're unstoppable!"
+    },
+    {
+      "id": "complete_5",
+      "context": "task_complete",
+      "tone": "conservative",
+      "message": "Task completed. Well done."
+    },
+    {
+      "id": "complete_6",
+      "context": "task_complete",
+      "tone": "conservative",
+      "message": "Progress made. Keep going."
+    },
+    {
+      "id": "complete_7",
+      "context": "task_complete",
+      "tone": "energetic",
+      "message": "You're on fire today! 🔥"
+    },
+    {
+      "id": "complete_8",
+      "context": "task_complete",
+      "tone": "energetic",
+      "message": "Victory! Time to celebrate (for 30 seconds) 🎊"
+    },
+    {
+      "id": "complete_9",
+      "context": "task_complete",
+      "tone": "conservative",
+      "message": "One task closer to your goals."
+    },
+    {
+      "id": "complete_10",
+      "context": "task_complete",
+      "tone": "energetic",
+      "message": "Nailed it! Who's awesome? You're awesome!"
+    },
+    {
+      "id": "complete_11",
+      "context": "task_complete",
+      "tone": "energetic",
+      "message": "Task eliminated! Level up your day! ⬆️"
+    },
+    {
+      "id": "complete_12",
+      "context": "task_complete",
+      "tone": "conservative",
+      "message": "Task finished. Moving forward."
+    },
+    {
+      "id": "complete_13",
+      "context": "task_complete",
+      "tone": "energetic",
+      "message": "Yes! Another win in the books! 📚"
+    },
+    {
+      "id": "complete_14",
+      "context": "task_complete",
+      "tone": "energetic",
+      "message": "Productivity king/queen right here! 👑"
+    },
+    {
+      "id": "complete_15",
+      "context": "task_complete",
+      "tone": "conservative",
+      "message": "Completed successfully. Next task?"
+    },
+    {
+      "id": "missed_1",
+      "context": "missed_day",
+      "tone": "conservative",
+      "message": "Hey — rough day? One small step now will rebuild your streak."
+    },
+    {
+      "id": "missed_2",
+      "context": "missed_day",
+      "tone": "conservative",
+      "message": "Everyone stumbles. Start fresh today."
+    },
+    {
+      "id": "missed_3",
+      "context": "missed_day",
+      "tone": "energetic",
+      "message": "Missed a day? No worries! Comeback starts now! 💪"
+    },
+    {
+      "id": "missed_4",
+      "context": "missed_day",
+      "tone": "conservative",
+      "message": "Streaks can be rebuilt. Start with 5 minutes today."
+    },
+    {
+      "id": "missed_5",
+      "context": "missed_day",
+      "tone": "energetic",
+      "message": "Reset button = new superpower. Let's go!"
+    },
+    {
+      "id": "missed_6",
+      "context": "missed_day",
+      "tone": "conservative",
+      "message": "Progress isn't linear. Keep moving forward."
+    },
+    {
+      "id": "missed_7",
+      "context": "missed_day",
+      "tone": "energetic",
+      "message": "Plot twist: Today is your comeback story! 🎬"
+    },
+    {
+      "id": "missed_8",
+      "context": "missed_day",
+      "tone": "conservative",
+      "message": "One missed day doesn't erase your progress."
+    },
+    {
+      "id": "missed_9",
+      "context": "missed_day",
+      "tone": "energetic",
+      "message": "Phoenix mode activated — rise from the ashes! 🔥"
+    },
+    {
+      "id": "missed_10",
+      "context": "missed_day",
+      "tone": "conservative",
+      "message": "Begin again. That's the secret."
+    },
+    {
+      "id": "streak_1",
+      "context": "streak_milestone",
+      "tone": "energetic",
+      "message": "5-day streak! You're building momentum! 🚀"
+    },
+    {
+      "id": "streak_2",
+      "context": "streak_milestone",
+      "tone": "energetic",
+      "message": "10 days strong! Consistency is your superpower!"
+    },
+    {
+      "id": "streak_3",
+      "context": "streak_milestone",
+      "tone": "energetic",
+      "message": "30-DAY STREAK! Legend status unlocked! 🏆"
+    },
+    {
+      "id": "streak_4",
+      "context": "streak_milestone",
+      "tone": "conservative",
+      "message": "7-day streak achieved. Excellent consistency."
+    },
+    {
+      "id": "streak_5",
+      "context": "streak_milestone",
+      "tone": "energetic",
+      "message": "Streak milestone! Bonus points incoming! 🎁"
+    },
+    {
+      "id": "streak_6",
+      "context": "streak_milestone",
+      "tone": "conservative",
+      "message": "14 consecutive days. Impressive discipline."
+    },
+    {
+      "id": "streak_7",
+      "context": "streak_milestone",
+      "tone": "energetic",
+      "message": "You're on FIRE! Keep this momentum going! 🔥"
+    },
+    {
+      "id": "streak_8",
+      "context": "streak_milestone",
+      "tone": "conservative",
+      "message": "Milestone reached. Your dedication shows."
+    },
+    {
+      "id": "levelup_1",
+      "context": "level_up",
+      "tone": "energetic",
+      "message": "LEVEL UP! You just got more awesome! ⭐"
+    },
+    {
+      "id": "levelup_2",
+      "context": "level_up",
+      "tone": "energetic",
+      "message": "NEW LEVEL UNLOCKED! Confetti time! 🎊"
+    },
+    {
+      "id": "levelup_3",
+      "context": "level_up",
+      "tone": "conservative",
+      "message": "Level increased. Progress recognized."
+    },
+    {
+      "id": "levelup_4",
+      "context": "level_up",
+      "tone": "energetic",
+      "message": "Achievement unlocked: Next Level! 🚀"
+    },
+    {
+      "id": "levelup_5",
+      "context": "level_up",
+      "tone": "energetic",
+      "message": "Boss defeated: Mediocrity! Level up! 💪"
+    },
+    {
+      "id": "levelup_6",
+      "context": "level_up",
+      "tone": "conservative",
+      "message": "You've reached the next level. Well earned."
+    },
+    {
+      "id": "encourage_1",
+      "context": "encouragement",
+      "tone": "energetic",
+      "message": "Feeling stuck? Start with 5 minutes. Just 5!"
+    },
+    {
+      "id": "encourage_2",
+      "context": "encouragement",
+      "tone": "conservative",
+      "message": "Small progress is still progress."
+    },
+    {
+      "id": "encourage_3",
+      "context": "encouragement",
+      "tone": "energetic",
+      "message": "You've got this! Even on tough days, you're winning!"
+    },
+    {
+      "id": "encourage_4",
+      "context": "encouragement",
+      "tone": "conservative",
+      "message": "Take a breath. Then take the next step."
+    },
+    {
+      "id": "encourage_5",
+      "context": "encouragement",
+      "tone": "energetic",
+      "message": "Remember why you started. You're closer than you think!"
+    },
+    {
+      "id": "encourage_6",
+      "context": "encouragement",
+      "tone": "conservative",
+      "message": "Consistency beats perfection. Keep going."
+    },
+    {
+      "id": "encourage_7",
+      "context": "encouragement",
+      "tone": "energetic",
+      "message": "Tough day = character building day! 💎"
+    },
+    {
+      "id": "encourage_8",
+      "context": "encouragement",
+      "tone": "conservative",
+      "message": "Progress accumulates. Trust the process."
+    },
+    {
+      "id": "encourage_9",
+      "context": "encouragement",
+      "tone": "energetic",
+      "message": "You're not behind — you're exactly where you need to be!"
+    },
+    {
+      "id": "encourage_10",
+      "context": "encouragement",
+      "tone": "conservative",
+      "message": "Every expert was once a beginner."
+    },
+    {
+      "id": "morning_1",
+      "context": "encouragement",
+      "tone": "energetic",
+      "message": "Good morning! Today's packed with possibilities! ☀️"
+    },
+    {
+      "id": "morning_2",
+      "context": "encouragement",
+      "tone": "conservative",
+      "message": "New day, new opportunities."
+    },
+    {
+      "id": "morning_3",
+      "context": "encouragement",
+      "tone": "energetic",
+      "message": "Rise and grind! Your goals won't chase themselves!"
+    },
+    {
+      "id": "morning_4",
+      "context": "encouragement",
+      "tone": "conservative",
+      "message": "Good morning. Start with your most important task."
+    },
+    {
+      "id": "afternoon_1",
+      "context": "encouragement",
+      "tone": "energetic",
+      "message": "Afternoon slump? Quick walk + water = energy boost!"
+    },
+    {
+      "id": "afternoon_2",
+      "context": "encouragement",
+      "tone": "conservative",
+      "message": "Afternoon focus: maintain your momentum."
+    },
+    {
+      "id": "afternoon_3",
+      "context": "encouragement",
+      "tone": "energetic",
+      "message": "Second wind incoming! Let's finish strong!"
+    },
+    {
+      "id": "evening_1",
+      "context": "encouragement",
+      "tone": "energetic",
+      "message": "Evening reflection time — look how much you did!"
+    },
+    {
+      "id": "evening_2",
+      "context": "encouragement",
+      "tone": "conservative",
+      "message": "Review your progress and plan tomorrow."
+    },
+    {
+      "id": "evening_3",
+      "context": "encouragement",
+      "tone": "energetic",
+      "message": "End the day strong! Future you will be grateful!"
+    },
+    {
+      "id": "break_1",
+      "context": "encouragement",
+      "tone": "energetic",
+      "message": "Break time! Stretch those legs! 🚶"
+    },
+    {
+      "id": "break_2",
+      "context": "encouragement",
+      "tone": "conservative",
+      "message": "Time for a short break. Recharge."
+    },
+    {
+      "id": "break_3",
+      "context": "encouragement",
+      "tone": "energetic",
+      "message": "Quick break challenge: 10 pushups or 30-second plank!"
+    },
+    {
+      "id": "break_4",
+      "context": "encouragement",
+      "tone": "conservative",
+      "message": "5-minute break. Step away from the screen."
+    },
+    {
+      "id": "break_5",
+      "context": "encouragement",
+      "tone": "energetic",
+      "message": "Water break! Hydration = brain power! 💧"
+    },
+    {
+      "id": "focus_1",
+      "context": "encouragement",
+      "tone": "energetic",
+      "message": "Deep work mode! Phone away, notifications off!"
+    },
+    {
+      "id": "focus_2",
+      "context": "encouragement",
+      "tone": "conservative",
+      "message": "Eliminate distractions. Focus on one thing."
+    },
+    {
+      "id": "focus_3",
+      "context": "encouragement",
+      "tone": "energetic",
+      "message": "Laser focus activated! Nothing can stop you now! ⚡"
+    },
+    {
+      "id": "focus_4",
+      "context": "encouragement",
+      "tone": "conservative",
+      "message": "Single-tasking is the secret to quality work."
+    },
+    {
+      "id": "learning_1",
+      "context": "encouragement",
+      "tone": "energetic",
+      "message": "Learning mode! Your brain is leveling up! 🧠"
+    },
+    {
+      "id": "learning_2",
+      "context": "encouragement",
+      "tone": "conservative",
+      "message": "Knowledge compounds. Keep learning."
+    },
+    {
+      "id": "learning_3",
+      "context": "encouragement",
+      "tone": "energetic",
+      "message": "Every lesson = one step closer to mastery!"
+    },
+    {
+      "id": "learning_4",
+      "context": "encouragement",
+      "tone": "conservative",
+      "message": "Consistent learning builds expertise over time."
+    },
+    {
+      "id": "learning_5",
+      "context": "encouragement",
+      "tone": "energetic",
+      "message": "Future expert in the making — that's you! 📚"
+    },
+    {
+      "id": "procrastination_1",
+      "context": "encouragement",
+      "tone": "energetic",
+      "message": "Procrastinating? Just start for 2 minutes. That's all!"
+    },
+    {
+      "id": "procrastination_2",
+      "context": "encouragement",
+      "tone": "conservative",
+      "message": "The hardest part is starting. Begin now."
+    },
+    {
+      "id": "procrastination_3",
+      "context": "encouragement",
+      "tone": "energetic",
+      "message": "Beat procrastination: Timer ON, excuses OFF!"
+    },
+    {
+      "id": "procrastination_4",
+      "context": "encouragement",
+      "tone": "conservative",
+      "message": "Action removes doubt. Start with step one."
+    },
+    {
+      "id": "procrastination_5",
+      "context": "encouragement",
+      "tone": "energetic",
+      "message": "Motivation follows action — not the other way around!"
+    },
+    {
+      "id": "weekend_1",
+      "context": "encouragement",
+      "tone": "energetic",
+      "message": "Weekend warrior mode! Small wins add up!"
+    },
+    {
+      "id": "weekend_2",
+      "context": "encouragement",
+      "tone": "conservative",
+      "message": "Weekend progress counts just as much."
+    },
+    {
+      "id": "weekend_3",
+      "context": "encouragement",
+      "tone": "energetic",
+      "message": "Weekend hustle! Rest when you're proud!"
+    },
+    {
+      "id": "client_1",
+      "context": "encouragement",
+      "tone": "energetic",
+      "message": "Client work time! Deliver that wow factor! 🌟"
+    },
+    {
+      "id": "client_2",
+      "context": "encouragement",
+      "tone": "conservative",
+      "message": "Focus on client value. Quality matters."
+    },
+    {
+      "id": "client_3",
+      "context": "encouragement",
+      "tone": "energetic",
+      "message": "Building client success = building your reputation!"
+    },
+    {
+      "id": "ads_1",
+      "context": "encouragement",
+      "tone": "energetic",
+      "message": "Ads mastery loading! Every campaign teaches something!"
+    },
+    {
+      "id": "ads_2",
+      "context": "encouragement",
+      "tone": "conservative",
+      "message": "Analyze, optimize, improve. That's the ads cycle."
+    },
+    {
+      "id": "ads_3",
+      "context": "encouragement",
+      "tone": "energetic",
+      "message": "ROI incoming! Your ads skills are leveling up!"
+    },
+    {
+      "id": "seo_1",
+      "context": "encouragement",
+      "tone": "energetic",
+      "message": "SEO wizard in training! Rank higher, earn more! 📈"
+    },
+    {
+      "id": "seo_2",
+      "context": "encouragement",
+      "tone": "conservative",
+      "message": "SEO is a marathon. Stay consistent."
+    },
+    {
+      "id": "seo_3",
+      "context": "encouragement",
+      "tone": "energetic",
+      "message": "Keywords + content + patience = SEO success!"
+    },
+    {
+      "id": "wordpress_1",
+      "context": "encouragement",
+      "tone": "energetic",
+      "message": "WordPress guru mode! Fix it, build it, ship it!"
+    },
+    {
+      "id": "wordpress_2",
+      "context": "encouragement",
+      "tone": "conservative",
+      "message": "WordPress skills = reliable income. Keep building."
+    },
+    {
+      "id": "wordpress_3",
+      "context": "encouragement",
+      "tone": "energetic",
+      "message": "Every plugin fixed = problem-solving badge earned!"
+    },
+    {
+      "id": "portfolio_1",
+      "context": "encouragement",
+      "tone": "energetic",
+      "message": "Portfolio power-up! Show the world what you can do!"
+    },
+    {
+      "id": "portfolio_2",
+      "context": "encouragement",
+      "tone": "conservative",
+      "message": "Your portfolio is your best salesperson."
+    },
+    {
+      "id": "portfolio_3",
+      "context": "encouragement",
+      "tone": "energetic",
+      "message": "Update that portfolio — future clients are watching!"
+    },
+    {
+      "id": "habit_1",
+      "context": "encouragement",
+      "tone": "energetic",
+      "message": "Daily habit time! Small routines = big results!"
+    },
+    {
+      "id": "habit_2",
+      "context": "encouragement",
+      "tone": "conservative",
+      "message": "Habits compound. Stay consistent."
+    },
+    {
+      "id": "habit_3",
+      "context": "encouragement",
+      "tone": "energetic",
+      "message": "Habit streak growing! You're unstoppable!"
+    },
+    {
+      "id": "milestone_1",
+      "context": "encouragement",
+      "tone": "energetic",
+      "message": "Milestone alert! Celebrate this win! 🎉"
+    },
+    {
+      "id": "milestone_2",
+      "context": "encouragement",
+      "tone": "conservative",
+      "message": "Milestone reached. Acknowledge your progress."
+    },
+    {
+      "id": "milestone_3",
+      "context": "encouragement",
+      "tone": "energetic",
+      "message": "Major milestone crushed! What's next, champion?"
+    },
+    {
+      "id": "firsttask_1",
+      "context": "encouragement",
+      "tone": "energetic",
+      "message": "First task done! Momentum initiated! 🚀"
+    },
+    {
+      "id": "firsttask_2",
+      "context": "encouragement",
+      "tone": "conservative",
+      "message": "First task complete. The rest will follow."
+    },
+    {
+      "id": "firsttask_3",
+      "context": "encouragement",
+      "tone": "energetic",
+      "message": "Started strong! Keep this energy going!"
+    },
+    {
+      "id": "endday_1",
+      "context": "encouragement",
+      "tone": "energetic",
+      "message": "Day complete! You showed up and did the work! 💪"
+    },
+    {
+      "id": "endday_2",
+      "context": "encouragement",
+      "tone": "conservative",
+      "message": "Another productive day. Rest well."
+    },
+    {
+      "id": "endday_3",
+      "context": "encouragement",
+      "tone": "energetic",
+      "message": "Daily goals smashed! Tomorrow will be even better!"
+    },
+    {
+      "id": "comeback_1",
+      "context": "encouragement",
+      "tone": "energetic",
+      "message": "Comeback mode: ON! Let's rebuild that momentum!"
+    },
+    {
+      "id": "comeback_2",
+      "context": "encouragement",
+      "tone": "conservative",
+      "message": "Starting fresh. Progress resumes today."
+    },
+    {
+      "id": "comeback_3",
+      "context": "encouragement",
+      "tone": "energetic",
+      "message": "Every champion has a comeback story. This is yours!"
+    },
+    {
+      "id": "challenge_1",
+      "context": "encouragement",
+      "tone": "energetic",
+      "message": "Challenge accepted! Difficulty = growth opportunity!"
+    },
+    {
+      "id": "challenge_2",
+      "context": "encouragement",
+      "tone": "conservative",
+      "message": "Difficult tasks build stronger skills."
+    },
+    {
+      "id": "challenge_3",
+      "context": "encouragement",
+      "tone": "energetic",
+      "message": "Hard task? Perfect! That's where magic happens!"
+    },
+    {
+      "id": "sprint_1",
+      "context": "encouragement",
+      "tone": "energetic",
+      "message": "Sprint mode! 25 minutes of pure focus!"
+    },
+    {
+      "id": "sprint_2",
+      "context": "encouragement",
+      "tone": "conservative",
+      "message": "Short sprint. Maximum focus."
+    },
+    {
+      "id": "sprint_3",
+      "context": "encouragement",
+      "tone": "energetic",
+      "message": "Power sprint activated! Let's gooooo! 🏃"
+    },
+    {
+      "id": "consistency_1",
+      "context": "encouragement",
+      "tone": "energetic",
+      "message": "Showing up = winning! You're here, you're doing it!"
+    },
+    {
+      "id": "consistency_2",
+      "context": "encouragement",
+      "tone": "conservative",
+      "message": "Consistency is your greatest advantage."
+    },
+    {
+      "id": "consistency_3",
+      "context": "encouragement",
+      "tone": "energetic",
+      "message": "Day after day, you're building something great!"
+    },
+    {
+      "id": "gratitude_1",
+      "context": "encouragement",
+      "tone": "energetic",
+      "message": "Grateful for your dedication! You inspire others!"
+    },
+    {
+      "id": "gratitude_2",
+      "context": "encouragement",
+      "tone": "conservative",
+      "message": "Your effort is noticed and appreciated."
+    },
+    {
+      "id": "gratitude_3",
+      "context": "encouragement",
+      "tone": "energetic",
+      "message": "Thank you for showing up today! You rock! 🌟"
+    }
+  ]
+}
