@@ -2,12 +2,37 @@ import { useState } from 'react';
 import { Button } from '@/components/ui/Button';
 import { Card } from '@/components/ui/Card';
 import { authApi } from '@/services/api';
+import { useStore } from '@/store';
 import { motion } from 'framer-motion';
 
 export function Login() {
   const [email, setEmail] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [message, setMessage] = useState('');
+  const { setUser } = useStore();
+
+  // Development mode: Skip authentication for testing
+  const handleDevLogin = () => {
+    setUser({
+      id: crypto.randomUUID(),
+      email: email || 'dev@sparkflow.local',
+      name: 'Dev User',
+      settings: {
+        theme: 'dark',
+        motivationMode: 'energetic',
+        pomodoroMinutes: 25,
+        shortBreakMinutes: 5,
+        longBreakMinutes: 15,
+        dailyLearningGoalMinutes: 60,
+        allowParallelTimers: false,
+        soundEnabled: true,
+        notificationsEnabled: true,
+      },
+      onboarding_completed: false,
+      created_at: new Date().toISOString(),
+      updated_at: new Date().toISOString(),
+    });
+  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -68,7 +93,24 @@ export function Login() {
 
           <div className="mt-6 text-sm text-dark-400 text-center">
             <p>Note: Supabase must be configured in .env</p>
-            <p className="mt-2">For demo: Use any email to see the UI</p>
+            <p className="mt-2">Having auth issues? See FIX_AUTH_ISSUE.md</p>
+          </div>
+
+          <div className="mt-4 pt-4 border-t border-dark-700">
+            <p className="text-xs text-dark-500 text-center mb-3">
+              Development Mode (Skip Authentication)
+            </p>
+            <Button
+              type="button"
+              variant="outline"
+              fullWidth
+              onClick={handleDevLogin}
+            >
+              🚀 Quick Start (Dev Mode)
+            </Button>
+            <p className="text-xs text-dark-500 text-center mt-2">
+              ⚠️ For testing only - no data will be saved to Supabase
+            </p>
           </div>
         </Card>
       </motion.div>
