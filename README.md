@@ -1,6 +1,6 @@
 # Med Spa Revenue OS — marketing site
 
-Static, token-driven redesign of acquirebook.com. No build step, no dependencies.
+Static, token-driven redesign of acquirebook.com — navy ink on warm paper, spec-sheet layout. No build step, no dependencies.
 
 ```
 index.html            single page
@@ -20,8 +20,8 @@ python3 -m http.server 8000
 
 ## Verified
 
-- axe-core: **0 violations**, 44 passes (WCAG 2.0/2.1/2.2 A + AA)
-- Contrast: every text pair ≥ 6.80:1 (AA requires 4.5:1)
+- axe-core: **0 violations**, 49 passes (WCAG 2.0/2.1/2.2 A + AA)
+- Contrast: every text pair clears AA (4.5:1)
 - No horizontal overflow at 375px
 - Calculator reproduces the published figures exactly
 

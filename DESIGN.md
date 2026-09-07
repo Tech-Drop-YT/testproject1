@@ -2,9 +2,17 @@
 
 ## 1. Context and goals
 
-**Design intent:** a dark, high-contrast marketing site whose every visual decision
-resolves to a named token, so the operational credibility of the product is mirrored
-by the consistency of its interface.
+**Design intent:** an operations spec sheet — navy ink on warm paper, ruled rows and
+tabular data — so the page reads like the operating document the product actually is.
+
+The palette is light. `design.md` supplies `#f5f3ee` paper, `#071a31` navy ink and
+`#5f6d77` slate; those three are a light system, and the reference brand (Calendly) is
+a light, functional marketing site.
+
+**Layout follows the density profile.** `design.md` records cards (4) against lists (14),
+so structure is carried by ruled lists, a numbered module listing and real tables. Cards
+are spent twice, on the two operating-model options, so that boxing a thing still means
+something.
 
 Surface: marketing site. Audience: U.S. med spa owners and decision-makers.
 Tone: concise, confident, implementation-focused.
@@ -27,12 +35,12 @@ primitives and exposed only through semantic names.
 
 | Semantic token | Role | Contrast |
 | --- | --- | --- |
-| `--color-text-primary` | body + headings on base | 20.29:1 |
-| `--color-text-secondary` | supporting copy | 7.94:1 on base, 6.80:1 on card |
-| `--color-text-accent` | accent labels, emphasis | 12.90:1 |
-| `--color-text-danger` | error text | 9.46:1 |
-| `--color-focus-ring` | focus-visible outline | 14.56:1 |
-| `--color-action-primary-label` on accent | primary button label | 10.74:1 |
+| `--color-text-primary` | navy ink, body + headings | 15.9:1 |
+| `--color-text-secondary` | slate, supporting copy | 4.9:1 |
+| `--color-text-leak` | loss / drop-off figures | 6.4:1 |
+| `--color-text-gain` | recovered / modeled gain | 6.3:1 |
+| `--color-focus-ring` | focus-visible outline | 6.6:1 |
+| `--color-action-label` on ink | primary button label | 15.3:1 |
 
 Every pair exceeds the WCAG 2.2 AA 4.5:1 text threshold.
 
@@ -64,7 +72,7 @@ loading and error**. Focus-visible is enforced globally and must never be remove
 ### Button (`.btn`)
 
 - **Variants:** `--primary` (filled accent), `--secondary` (outline), `--full` (block).
-- **States:** hover shifts to `--color-action-primary-press`; active translates 1px;
+- **States:** hover shifts to `--color-action-press`; active translates 1px;
   `[disabled]`/`[aria-disabled=true]` drop to 45% opacity and block pointer events;
   `[data-loading=true]` hides the label and shows a spinner, keeping button width so
   layout must not shift.
@@ -117,8 +125,8 @@ Testable pass/fail:
 
 | # | Criterion | How to verify | Status |
 | --- | --- | --- | --- |
-| A1 | Zero axe-core violations (wcag2a/aa, wcag21aa, wcag22aa) | run axe on the page | **0 violations, 44 passes** |
-| A2 | All text ≥ 4.5:1 | contrast table above | **min 6.80:1** |
+| A1 | Zero axe-core violations (wcag2a/aa, wcag21aa, wcag22aa) | run axe on the page | **0 violations, 49 passes** |
+| A2 | All text ≥ 4.5:1 | contrast table above | **pass** |
 | A3 | First tab stop is a working skip link | Tab from load | **pass** |
 | A4 | Every focusable control shows a 3px visible ring | Tab through page | **pass** |
 | A5 | Accordion operable by keyboard alone incl. arrows/Home/End | keyboard test | **pass** |

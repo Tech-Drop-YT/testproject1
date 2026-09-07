@@ -1,98 +1,94 @@
 /* =========================================================================
    Med Spa Revenue OS — Design Tokens
-   Single source of truth. No raw hex values may appear outside this file.
-   Primitive tokens (--*-raw) are private; components must consume the
-   semantic tokens only.
+   Single source of truth. No raw hex may appear outside this file.
+
+   Palette reading: design.md supplies a warm off-white surface (#f5f3ee),
+   a navy ink (#071a31) and a slate mid-tone (#5f6d77). Those three are a
+   light system, and the reference brand (Calendly) is a light, functional
+   marketing site — so the page is built light, on paper, with navy ink.
    ========================================================================= */
 
 :root {
-  /* ---------------------------------------------------------------------
-     1. Primitives — color
-     Values marked (spec) come verbatim from design.md. Values marked
-     (derived) are generated from the spec palette to satisfy the required
-     surface/border/state ramp; they are declared here so that component
-     CSS never introduces a one-off color.
-     --------------------------------------------------------------------- */
-  --raw-black:        #000000;  /* spec: color.surface.base      */
-  --raw-bone:         #fcfbf8;  /* spec: color.text.secondary    */
-  --raw-ink:          #071a31;  /* spec: color.text.tertiary     */
-  --raw-slate:        #5f6d77;  /* spec: color.text.inverse      */
-  --raw-porcelain:    #f5f3ee;  /* spec: color.surface.strong    */
+  color-scheme: light;
 
-  --raw-elev-1:       #0a0d12;  /* derived: lifted panel on base */
-  --raw-elev-2:       #111720;  /* derived: card on panel        */
-  --raw-elev-3:       #18202b;  /* derived: hover / active card  */
-  --raw-line:         #232c38;  /* derived: hairline border      */
-  --raw-line-strong:  #38434f;  /* derived: emphasised border    */
-  --raw-muted:        #93a1ad;  /* derived: 7.0:1 on base        */
-  --raw-accent:       #5ee0c0;  /* derived: primary action       */
-  --raw-accent-press: #3fc4a4;  /* derived: accent active        */
-  --raw-accent-soft:  #0f2b26;  /* derived: accent tint surface  */
-  --raw-danger:       #ff8f7a;  /* derived: 6.4:1 on base        */
-  --raw-danger-soft:  #2b1310;  /* derived: error tint surface   */
-  --raw-focus:        #ffd166;  /* derived: focus ring, 11.6:1   */
+  /* ---------------------------------------------------------------------
+     1. Primitives
+     (spec)    = verbatim from design.md
+     (derived) = generated from the spec palette to complete the ramp
+     --------------------------------------------------------------------- */
+  --raw-paper:       #f5f3ee;  /* spec: color.surface.strong  */
+  --raw-ink:         #071a31;  /* spec: color.text.tertiary   */
+  --raw-slate:       #5f6d77;  /* spec: color.text.inverse    */
+  --raw-bone:        #fcfbf8;  /* spec: color.text.secondary  */
+  --raw-black:       #000000;  /* spec: color.surface.base    */
+
+  --raw-white:       #ffffff;  /* derived: raised panel        */
+  --raw-paper-deep:  #ebe7de;  /* derived: recessed / inset    */
+  --raw-rule:        #d9d3c7;  /* derived: hairline rule       */
+  --raw-rule-strong: #b4ab99;  /* derived: emphasised rule     */
+
+  --raw-signal:      #0f5f4a;  /* derived: recovered / gain    */
+  --raw-signal-soft: #e2ede8;  /* derived: gain tint           */
+  --raw-leak:        #9c3418;  /* derived: loss / leak         */
+  --raw-leak-soft:   #f6e6df;  /* derived: loss tint           */
+  --raw-focus:       #1d4ed8;  /* derived: focus ring          */
 
   /* ---------------------------------------------------------------------
      2. Semantic color
      --------------------------------------------------------------------- */
-  --color-surface-base:      var(--raw-black);
-  --color-surface-raised:    var(--raw-elev-1);
-  --color-surface-card:      var(--raw-elev-2);
-  --color-surface-card-hover:var(--raw-elev-3);
-  --color-surface-strong:    var(--raw-porcelain);
-  --color-surface-accent:    var(--raw-accent-soft);
-  --color-surface-danger:    var(--raw-danger-soft);
+  --color-surface-base:     var(--raw-paper);
+  --color-surface-raised:   var(--raw-white);
+  --color-surface-inset:    var(--raw-paper-deep);
+  --color-surface-invert:   var(--raw-ink);
+  --color-surface-gain:     var(--raw-signal-soft);
+  --color-surface-leak:     var(--raw-leak-soft);
 
-  --color-border-subtle:     var(--raw-line);
-  --color-border-strong:     var(--raw-line-strong);
-  --color-border-accent:     var(--raw-accent);
-  --color-border-danger:     var(--raw-danger);
+  --color-rule:             var(--raw-rule);
+  --color-rule-strong:      var(--raw-rule-strong);
 
-  --color-text-primary:      var(--raw-bone);
-  --color-text-secondary:    var(--raw-muted);
-  --color-text-on-strong:    var(--raw-ink);
-  --color-text-on-strong-mut:var(--raw-slate);
-  --color-text-accent:       var(--raw-accent);
-  --color-text-danger:       var(--raw-danger);
-  --color-text-inverse:      var(--raw-black);
+  --color-text-primary:     var(--raw-ink);
+  --color-text-secondary:   var(--raw-slate);
+  --color-text-on-invert:   var(--raw-bone);
+  --color-text-gain:        var(--raw-signal);
+  --color-text-leak:        var(--raw-leak);
 
-  --color-action-primary:        var(--raw-accent);
-  --color-action-primary-press:  var(--raw-accent-press);
-  --color-action-primary-label:  var(--raw-ink);
-  --color-focus-ring:            var(--raw-focus);
+  --color-action:           var(--raw-ink);
+  --color-action-press:     var(--raw-black);
+  --color-action-label:     var(--raw-bone);
+  --color-focus-ring:       var(--raw-focus);
 
   /* ---------------------------------------------------------------------
-     3. Typography — spec scale
+     3. Typography — spec scale, unmodified
      --------------------------------------------------------------------- */
   --font-family-primary: "Geist", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --font-family-mono: "Geist Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
 
-  --font-size-xs:   12px;
-  --font-size-sm:   14px;
-  --font-size-md:   16px;
-  --font-size-lg:   18px;
-  --font-size-xl:   20px;
-  --font-size-2xl:  24px;
-  --font-size-3xl:  28px;
-  --font-size-4xl:  36px;
-  /* derived display steps, continuing the same ratio for hero type */
-  --font-size-5xl:  clamp(2.5rem, 1.6rem + 3.6vw, 3.5rem);
-  --font-size-6xl:  clamp(3rem, 1.9rem + 4.6vw, 4.5rem);
+  --font-size-xs:  12px;
+  --font-size-sm:  14px;
+  --font-size-md:  16px;
+  --font-size-lg:  18px;
+  --font-size-xl:  20px;
+  --font-size-2xl: 24px;
+  --font-size-3xl: 28px;
+  --font-size-4xl: 36px;
+  /* fluid display steps continuing the same scale */
+  --font-size-5xl: clamp(2.25rem, 1.5rem + 3vw, 3.25rem);
+  --font-size-6xl: clamp(2.75rem, 1.7rem + 4.2vw, 4.25rem);
 
   --font-weight-base:   400;
   --font-weight-medium: 500;
   --font-weight-strong: 600;
 
-  --line-height-tight:  1.12;
-  --line-height-snug:   1.28;
-  --line-height-base:   1.6;
+  --line-height-tight: 1.05;
+  --line-height-snug:  1.25;
+  --line-height-base:  1.6;
 
-  --letter-spacing-tight: -0.022em;
+  --letter-spacing-tight: -0.024em;
   --letter-spacing-flat:   0em;
-  --letter-spacing-wide:   0.09em;
+  --letter-spacing-wide:   0.1em;
 
   /* ---------------------------------------------------------------------
-     4. Spacing — spec scale, extended on the same rhythm for layout
+     4. Spacing — spec scale, continued on the same progression
      --------------------------------------------------------------------- */
   --space-1:  1.5px;
   --space-2:  4px;
@@ -109,7 +105,7 @@
   --space-13: 128px;
 
   /* ---------------------------------------------------------------------
-     5. Radius
+     5. Radius — spec
      --------------------------------------------------------------------- */
   --radius-xs:    3px;
   --radius-sm:    4px;
@@ -121,29 +117,28 @@
   --radius-pill:  999px;
 
   /* ---------------------------------------------------------------------
-     6. Elevation
+     6. Elevation — restrained; paper, not glass
      --------------------------------------------------------------------- */
-  --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.55);
-  --shadow-md: 0 8px 24px -12px rgb(0 0 0 / 0.8);
-  --shadow-lg: 0 24px 64px -24px rgb(0 0 0 / 0.9);
+  --shadow-sm: 0 1px 2px rgb(7 26 49 / 0.06);
+  --shadow-md: 0 12px 32px -20px rgb(7 26 49 / 0.30);
 
   /* ---------------------------------------------------------------------
-     7. Motion
+     7. Motion — spec
      --------------------------------------------------------------------- */
   --motion-duration-instant: 150ms;
   --motion-duration-fast:    200ms;
   --motion-duration-normal:  300ms;
   --motion-ease-standard: cubic-bezier(0.2, 0, 0, 1);
-  --motion-ease-exit:     cubic-bezier(0.4, 0, 1, 1);
 
   /* ---------------------------------------------------------------------
      8. Layout
      --------------------------------------------------------------------- */
-  --layout-max:      1200px;
-  --layout-max-text: 68ch;
+  --layout-max:      1180px;
+  --layout-max-text: 62ch;
   --layout-gutter:   var(--space-8);
   --focus-ring-width: 3px;
   --focus-ring-offset: 2px;
+  --header-height: 64px;
 }
 
 @media (min-width: 60rem) {

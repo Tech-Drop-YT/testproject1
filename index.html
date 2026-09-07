@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Med Spa Revenue OS — Close the gaps between the ad and the returning patient</title>
-<meta name="description" content="Med Spa Revenue OS connects ads, front desk, booking, follow-up, no-show recovery, consult conversion, rebooking, memberships, reviews and attribution — so more of the leads you already pay for become showing, paying and returning patients.">
+<title>Med Spa Revenue OS — The operating layer between your ad and your returning patient</title>
+<meta name="description" content="Med Spa Revenue OS connects your ads, front desk, booking, follow-up, no-show recovery, consultation conversion, rebooking, memberships, reviews and attribution — so more of the leads you already pay for become showing, paying and returning patients.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400&family=Geist:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500&family=Geist:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="assets/css/tokens.css">
 <link rel="stylesheet" href="assets/css/styles.css">
 </head>
@@ -18,13 +18,9 @@
 <header class="header">
   <div class="shell header__inner">
     <a class="brand" href="#top">
-      <span class="brand__mark" aria-hidden="true">OS</span>
-      <span class="brand__name">
-        Med Spa Revenue OS
-        <span class="brand__sub">Built for U.S. med spas</span>
-      </span>
+      Med&nbsp;Spa Revenue&nbsp;OS
+      <span class="brand__meta">U.S. med spas</span>
     </a>
-
     <nav class="nav" aria-label="Primary">
       <ul class="nav__list">
         <li><a class="nav__link" href="#system">The System</a></li>
@@ -32,257 +28,243 @@
         <li><a class="nav__link" href="#faq">FAQ</a></li>
       </ul>
     </nav>
-
-    <div class="header__cta">
-      <a class="btn btn--primary" href="#book">Book Audit</a>
-    </div>
-
-    <button class="btn btn--secondary nav-toggle" type="button"
-            data-nav-toggle aria-expanded="false" aria-controls="nav-panel">
-      <span data-nav-label>Menu</span>
-      <span class="visually-hidden">navigation</span>
+    <div class="header__cta"><a class="btn btn--primary" href="#book">Book Audit</a></div>
+    <button class="btn btn--secondary nav-toggle" type="button" data-nav-toggle
+            aria-expanded="false" aria-controls="nav-panel">
+      <span data-nav-label>Menu</span><span class="visually-hidden">navigation</span>
     </button>
   </div>
-
   <div class="nav-panel" id="nav-panel" hidden>
     <div class="shell">
-      <ul class="nav-panel__list">
+      <ul>
         <li><a class="nav-panel__link" href="#system">The System</a></li>
         <li><a class="nav-panel__link" href="#calculator">Revenue Leak Calculator</a></li>
         <li><a class="nav-panel__link" href="#faq">FAQ</a></li>
       </ul>
-      <p style="margin-top: var(--space-7)">
-        <a class="btn btn--primary btn--full" href="#book">Book Audit</a>
-      </p>
+      <p style="margin-top: var(--space-7)"><a class="btn btn--primary btn--full" href="#book">Book Audit</a></p>
     </div>
   </div>
 </header>
 
 <main id="content">
 
-  <!-- ============================ Hero ============================ -->
+  <!-- ============================== Hero ============================== -->
   <section class="hero" id="top">
     <div class="shell hero__grid">
       <div class="hero__copy">
-        <span class="badge badge--accent"><span class="badge__dot" aria-hidden="true"></span>Built for U.S. med spas</span>
-        <h1 class="hero__title">Your ads don&rsquo;t need more leads. Your business needs fewer revenue leaks.</h1>
+        <p class="mono">Built for U.S. med spas</p>
+        <h1 class="hero__title">Your ads don&rsquo;t need more leads. Your business needs fewer <em>revenue leaks</em>.</h1>
         <p class="lede">
           Med Spa Revenue OS connects your ads, front desk, booking, follow-up, no-show
           recovery, consultation conversion, rebooking, memberships, reviews and
           attribution &mdash; so more of the leads you already pay for become showing,
           paying and returning patients.
         </p>
-        <div class="hero__actions">
+        <div class="actions">
           <a class="btn btn--primary" href="#book">Book My Revenue Audit</a>
           <a class="btn btn--secondary" href="#system">See How the System Works</a>
         </div>
       </div>
 
-      <!-- Illustrative dashboard. Decorative data, hidden from AT beyond its caption. -->
-      <div class="panel">
-        <div class="panel__bar">
-          <div>
-            <p class="panel__title">Revenue Pipeline</p>
-            <p class="fine">Example dashboard view</p>
-          </div>
-          <span class="badge"><span class="badge__dot" aria-hidden="true"></span>Live operations</span>
-        </div>
-        <div class="panel__body">
-          <div class="metric-grid">
-            <div class="metric">
-              <p class="metric__label">Lead response SLA</p>
-              <p class="metric__value">1m 42s</p>
-              <p class="metric__note">Within target</p>
-            </div>
-            <div class="metric">
-              <p class="metric__label">Booked consults</p>
-              <p class="metric__value">68</p>
-              <p class="metric__note">Track by source</p>
-            </div>
-            <div class="metric">
-              <p class="metric__label">Show rate</p>
-              <p class="metric__value">82%</p>
-              <p class="metric__note">After reminders</p>
-            </div>
-            <div class="metric">
-              <p class="metric__label">Reactivation</p>
-              <p class="metric__value">19</p>
-              <p class="metric__note">Recovered patients</p>
-            </div>
-          </div>
+      <figure class="leakchart">
+        <figcaption class="leakchart__head">
+          <span class="mono">Lead &rarr; patient funnel</span>
+          <span class="fine">Example, per 100 leads</span>
+        </figcaption>
 
-          <div class="funnel">
-            <p class="funnel__head">Lead &rarr; Patient funnel</p>
-            <div class="funnel__row"><span class="funnel__label">New leads</span><span class="funnel__track"><span class="funnel__fill" style="width:100%"></span></span><span class="funnel__value">100</span></div>
-            <div class="funnel__row"><span class="funnel__label">Contacted</span><span class="funnel__track"><span class="funnel__fill" style="width:84%"></span></span><span class="funnel__value">84</span></div>
-            <div class="funnel__row"><span class="funnel__label">Booked</span><span class="funnel__track"><span class="funnel__fill" style="width:62%"></span></span><span class="funnel__value">62</span></div>
-            <div class="funnel__row"><span class="funnel__label">Showed</span><span class="funnel__track"><span class="funnel__fill" style="width:51%"></span></span><span class="funnel__value">51</span></div>
-            <div class="funnel__row"><span class="funnel__label">Purchased</span><span class="funnel__track"><span class="funnel__fill" style="width:35%"></span></span><span class="funnel__value">35</span></div>
-          </div>
+        <div class="leakchart__row">
+          <span class="leakchart__top"><span>New leads</span><span class="leakchart__n">100</span></span>
+          <span class="leakchart__bar"><span class="leakchart__fill" style="width:100%"></span></span>
         </div>
-      </div>
+        <div class="leakchart__row">
+          <span class="leakchart__top"><span>Contacted</span><span class="leakchart__n">84</span></span>
+          <span class="leakchart__bar"><span class="leakchart__fill" style="width:84%"></span></span>
+          <span class="leakchart__loss">&minus;16 never reached in time</span>
+        </div>
+        <div class="leakchart__row">
+          <span class="leakchart__top"><span>Booked</span><span class="leakchart__n">62</span></span>
+          <span class="leakchart__bar"><span class="leakchart__fill" style="width:62%"></span></span>
+          <span class="leakchart__loss">&minus;22 never booked</span>
+        </div>
+        <div class="leakchart__row">
+          <span class="leakchart__top"><span>Showed</span><span class="leakchart__n">51</span></span>
+          <span class="leakchart__bar"><span class="leakchart__fill" style="width:51%"></span></span>
+          <span class="leakchart__loss">&minus;11 no-showed</span>
+        </div>
+        <div class="leakchart__row">
+          <span class="leakchart__top"><span>Purchased</span><span class="leakchart__n">35</span></span>
+          <span class="leakchart__bar"><span class="leakchart__fill" style="width:35%"></span></span>
+          <span class="leakchart__loss">&minus;16 left the consult undecided</span>
+        </div>
+
+        <div class="leakchart__foot">
+          <span>Paid for</span><span><b>100</b></span>
+        </div>
+        <div class="leakchart__foot" style="margin-top:0;border-top:0;padding-top:0">
+          <span>Treated</span><span><b>35</b></span>
+        </div>
+      </figure>
     </div>
   </section>
 
-  <p class="strip">Designed to connect the systems already running your med spa</p>
+  <div class="shell"><p class="strip mono">Designed to connect the systems already running your med spa</p></div>
 
-  <!-- ======================= The real problem ======================= -->
+  <!-- ============================ Problem ============================ -->
   <section class="section" aria-labelledby="problem-title">
     <div class="shell">
-      <div class="section-head">
-        <span class="eyebrow">The real problem</span>
+      <div class="head">
+        <p class="head__label">The real problem</p>
         <h2 id="problem-title">Most med spas don&rsquo;t have a lead problem. They have a handoff problem.</h2>
         <p class="lede">
-          You can pay for great traffic and still lose the patient between the ad, the
-          front desk, the consult and the next visit. We build the operating layer that
-          closes those gaps.
+          You can pay for great traffic and still lose the patient between the ad, the front
+          desk, the consult and the next visit. We build the operating layer that closes
+          those gaps.
         </p>
       </div>
 
-      <div class="grid grid--3">
-        <article class="card">
-          <h3>Leads wait too long</h3>
-          <p class="card__body">New inquiries sit in an inbox while intent cools. The system assigns, alerts and starts follow-up immediately.</p>
-        </article>
-        <article class="card">
-          <h3>Booked &ne; showed</h3>
-          <p class="card__body">Without confirmation, reminders and easy rescheduling, the calendar looks full but treatment rooms aren&rsquo;t.</p>
-        </article>
-        <article class="card">
-          <h3>Consults don&rsquo;t close</h3>
-          <p class="card__body">&ldquo;I&rsquo;ll think about it&rdquo; is usually where revenue disappears. We create structured follow-up and objection tracking.</p>
-        </article>
-        <article class="card">
-          <h3>Old patients go quiet</h3>
-          <p class="card__body">Thousands of past patients and old leads often sit untouched. We segment and reactivate them intelligently.</p>
-        </article>
-        <article class="card">
-          <h3>Memberships leak</h3>
-          <p class="card__body">Missed payments, cancellations and weak member communication quietly reduce recurring revenue.</p>
-        </article>
-        <article class="card">
-          <h3>Marketing can&rsquo;t prove revenue</h3>
-          <p class="card__body">CPL alone hides the truth. We connect source &rarr; appointment &rarr; show &rarr; treatment &rarr; revenue where possible.</p>
-        </article>
-      </div>
+      <dl class="ruled">
+        <div class="ruled__item">
+          <dt class="ruled__term">Leads wait too long</dt>
+          <dd class="ruled__desc">New inquiries sit in an inbox while intent cools. The system assigns, alerts and starts follow-up immediately.</dd>
+        </div>
+        <div class="ruled__item">
+          <dt class="ruled__term">Booked &ne; showed</dt>
+          <dd class="ruled__desc">Without confirmation, reminders and easy rescheduling, the calendar looks full but treatment rooms aren&rsquo;t.</dd>
+        </div>
+        <div class="ruled__item">
+          <dt class="ruled__term">Consults don&rsquo;t close</dt>
+          <dd class="ruled__desc">&ldquo;I&rsquo;ll think about it&rdquo; is usually where revenue disappears. We create structured follow-up and objection tracking.</dd>
+        </div>
+        <div class="ruled__item">
+          <dt class="ruled__term">Old patients go quiet</dt>
+          <dd class="ruled__desc">Thousands of past patients and old leads often sit untouched. We segment and reactivate them intelligently.</dd>
+        </div>
+        <div class="ruled__item">
+          <dt class="ruled__term">Memberships leak</dt>
+          <dd class="ruled__desc">Missed payments, cancellations and weak member communication quietly reduce recurring revenue.</dd>
+        </div>
+        <div class="ruled__item">
+          <dt class="ruled__term">Marketing can&rsquo;t prove revenue</dt>
+          <dd class="ruled__desc">CPL alone hides the truth. We connect source &rarr; appointment &rarr; show &rarr; treatment &rarr; revenue where possible.</dd>
+        </div>
+      </dl>
     </div>
   </section>
 
-  <!-- =========================== The system =========================== -->
+  <!-- ============================ System ============================ -->
   <section class="section" id="system" aria-labelledby="system-title">
     <div class="shell">
-      <div class="section-head">
-        <span class="eyebrow">The system</span>
+      <div class="head">
+        <p class="head__label">The system</p>
         <h2 id="system-title">One revenue engine. Ten connected systems.</h2>
         <p class="lede">
           Each module has a trigger, workflow, owner, fallback and KPI. The goal isn&rsquo;t
           more automation &mdash; it&rsquo;s fewer places for revenue to disappear.
         </p>
-        <p><a class="btn btn--primary" href="#book">Book My Revenue Audit</a></p>
       </div>
 
-      <div class="grid grid--3">
-        <article class="card">
-          <p class="card__index">01</p>
-          <h3>Lead Capture + Attribution</h3>
-          <p class="card__body">Meta, Google, website, phone and referral leads enter one system with source, service interest, campaign and lifecycle data.</p>
-          <p class="card__tag">Ads &rarr; CRM</p>
-        </article>
-        <article class="card">
-          <p class="card__index">02</p>
-          <h3>Speed-to-Lead Routing</h3>
-          <p class="card__body">Round-robin assignment, instant alerts, call tasks, SLA tracking and escalation so inquiries are acted on fast.</p>
-          <p class="card__tag">CRM &rarr; Team</p>
-        </article>
-        <article class="card">
-          <p class="card__index">03</p>
-          <h3>Qualification + Smart Follow-Up</h3>
-          <p class="card__body">Service, urgency, location and intent determine which person, calendar and nurture path the lead enters.</p>
-          <p class="card__tag">Lead &rarr; Path</p>
-        </article>
-        <article class="card">
-          <p class="card__index">04</p>
-          <h3>Booking + No-Show Prevention</h3>
-          <p class="card__body">Service-specific calendars, confirmations, reminders and low-friction rescheduling protect booked revenue.</p>
-          <p class="card__tag">Book &rarr; Show</p>
-        </article>
-        <article class="card">
-          <p class="card__index">05</p>
-          <h3>No-Show + Cancellation Recovery</h3>
-          <p class="card__body">Missed appointments trigger a recovery journey instead of becoming dead opportunities.</p>
-          <p class="card__tag">Loss &rarr; Recover</p>
-        </article>
-        <article class="card">
-          <p class="card__index">06</p>
-          <h3>Consult-to-Treatment Follow-Up</h3>
-          <p class="card__body">Track consult outcomes, objections and next steps. Follow-up changes based on what actually blocked the sale.</p>
-          <p class="card__tag">Consult &rarr; Sale</p>
-        </article>
-        <article class="card">
-          <p class="card__index">07</p>
-          <h3>Rebooking + Reactivation</h3>
-          <p class="card__body">Past patients and old leads receive context-aware follow-up based on relationship, prior service and timing.</p>
-          <p class="card__tag">Database &rarr; Revenue</p>
-        </article>
-        <article class="card">
-          <p class="card__index">08</p>
-          <h3>Membership Lifecycle</h3>
-          <p class="card__body">Member onboarding, billing events, renewal touchpoints, failed-payment workflows and cancellation insights.</p>
-          <p class="card__tag">LTV</p>
-        </article>
-        <article class="card">
-          <p class="card__index">09</p>
-          <h3>Reputation + Referral</h3>
-          <p class="card__body">Post-visit feedback, review requests, service-recovery handoffs and referral capture become systematic.</p>
-          <p class="card__tag">Trust</p>
-        </article>
-        <article class="card">
-          <p class="card__index">10</p>
-          <h3>Revenue Reporting + Ad Feedback</h3>
-          <p class="card__body">Report beyond CPL: response time, booking rate, show rate, conversion, CAC, reactivation and attributable revenue.</p>
-          <p class="card__tag">Data &rarr; Decisions</p>
-        </article>
-      </div>
+      <ol class="modules">
+        <li class="module">
+          <span class="module__n">01</span>
+          <span class="module__name">Lead Capture + Attribution</span>
+          <span class="module__desc">Meta, Google, website, phone and referral leads enter one system with source, service interest, campaign and lifecycle data.</span>
+          <span class="module__flow">Ads &rarr; CRM</span>
+        </li>
+        <li class="module">
+          <span class="module__n">02</span>
+          <span class="module__name">Speed-to-Lead Routing</span>
+          <span class="module__desc">Round-robin assignment, instant alerts, call tasks, SLA tracking and escalation so inquiries are acted on fast.</span>
+          <span class="module__flow">CRM &rarr; Team</span>
+        </li>
+        <li class="module">
+          <span class="module__n">03</span>
+          <span class="module__name">Qualification + Smart Follow-Up</span>
+          <span class="module__desc">Service, urgency, location and intent determine which person, calendar and nurture path the lead enters.</span>
+          <span class="module__flow">Lead &rarr; Path</span>
+        </li>
+        <li class="module">
+          <span class="module__n">04</span>
+          <span class="module__name">Booking + No-Show Prevention</span>
+          <span class="module__desc">Service-specific calendars, confirmations, reminders and low-friction rescheduling protect booked revenue.</span>
+          <span class="module__flow">Book &rarr; Show</span>
+        </li>
+        <li class="module">
+          <span class="module__n">05</span>
+          <span class="module__name">No-Show + Cancellation Recovery</span>
+          <span class="module__desc">Missed appointments trigger a recovery journey instead of becoming dead opportunities.</span>
+          <span class="module__flow">Loss &rarr; Recover</span>
+        </li>
+        <li class="module">
+          <span class="module__n">06</span>
+          <span class="module__name">Consult-to-Treatment Follow-Up</span>
+          <span class="module__desc">Track consult outcomes, objections and next steps. Follow-up changes based on what actually blocked the sale.</span>
+          <span class="module__flow">Consult &rarr; Sale</span>
+        </li>
+        <li class="module">
+          <span class="module__n">07</span>
+          <span class="module__name">Rebooking + Reactivation</span>
+          <span class="module__desc">Past patients and old leads receive context-aware follow-up based on relationship, prior service and timing.</span>
+          <span class="module__flow">Database &rarr; Revenue</span>
+        </li>
+        <li class="module">
+          <span class="module__n">08</span>
+          <span class="module__name">Membership Lifecycle</span>
+          <span class="module__desc">Member onboarding, billing events, renewal touchpoints, failed-payment workflows and cancellation insights.</span>
+          <span class="module__flow">LTV</span>
+        </li>
+        <li class="module">
+          <span class="module__n">09</span>
+          <span class="module__name">Reputation + Referral</span>
+          <span class="module__desc">Post-visit feedback, review requests, service-recovery handoffs and referral capture become systematic.</span>
+          <span class="module__flow">Trust</span>
+        </li>
+        <li class="module">
+          <span class="module__n">10</span>
+          <span class="module__name">Revenue Reporting + Ad Feedback</span>
+          <span class="module__desc">Report beyond CPL: response time, booking rate, show rate, conversion, CAC, reactivation and attributable revenue.</span>
+          <span class="module__flow">Data &rarr; Decisions</span>
+        </li>
+      </ol>
 
       <div class="journey">
-        <p class="journey__title">The patient journey we engineer</p>
+        <p class="mono">The patient journey we engineer</p>
         <ol class="journey__list">
           <li class="journey__step">Ad / Search / Referral</li>
-          <li class="journey__arrow" aria-hidden="true">&rarr;</li>
+          <li class="journey__sep" aria-hidden="true">/</li>
           <li class="journey__step">Fast Contact</li>
-          <li class="journey__arrow" aria-hidden="true">&rarr;</li>
+          <li class="journey__sep" aria-hidden="true">/</li>
           <li class="journey__step">Booked</li>
-          <li class="journey__arrow" aria-hidden="true">&rarr;</li>
+          <li class="journey__sep" aria-hidden="true">/</li>
           <li class="journey__step">Showed</li>
-          <li class="journey__arrow" aria-hidden="true">&rarr;</li>
+          <li class="journey__sep" aria-hidden="true">/</li>
           <li class="journey__step">Treatment</li>
-          <li class="journey__arrow" aria-hidden="true">&rarr;</li>
+          <li class="journey__sep" aria-hidden="true">/</li>
           <li class="journey__step">Review</li>
-          <li class="journey__arrow" aria-hidden="true">&rarr;</li>
+          <li class="journey__sep" aria-hidden="true">/</li>
           <li class="journey__step">Rebook / Member</li>
-          <li class="journey__arrow" aria-hidden="true">&rarr;</li>
+          <li class="journey__sep" aria-hidden="true">/</li>
           <li class="journey__step journey__step--end">Higher LTV</li>
         </ol>
       </div>
     </div>
   </section>
 
-  <!-- ======================= Operating model ======================= -->
+  <!-- ========================= Operating model ========================= -->
   <section class="section" aria-labelledby="model-title">
     <div class="shell">
-      <div class="section-head">
-        <span class="eyebrow">Your operating model</span>
+      <div class="head">
+        <p class="head__label">Your operating model</p>
         <h2 id="model-title">Keep your team. Add our call team. Or add AI after hours.</h2>
         <p class="lede">The infrastructure stays the same. You choose who handles the conversations.</p>
       </div>
 
-      <div class="grid grid--2">
-        <article class="card card--feature">
-          <span class="badge badge--accent">Recommended</span>
+      <div class="pair">
+        <article class="card card--lead">
+          <span class="tag">Recommended</span>
           <h3>Human-First Revenue Desk</h3>
-          <p class="card__body">
-            Your front desk or a dedicated call team handles live conversations while the
-            CRM controls assignment, follow-up, tasks, reminders and accountability.
+          <p class="card__note">
+            Your front desk or a dedicated call team handles live conversations while the CRM
+            controls assignment, follow-up, tasks, reminders and accountability.
           </p>
           <ul class="checklist">
             <li>Immediate lead routing and call tasks</li>
@@ -294,11 +276,11 @@
         </article>
 
         <article class="card">
-          <span class="badge">Optional</span>
+          <span class="tag tag--quiet">Optional</span>
           <h3>AI Coverage Layer</h3>
-          <p class="card__body">
-            Add AI where it creates leverage: after-hours calls, missed-call capture,
-            overflow, qualification, basic FAQs and appointment scheduling.
+          <p class="card__note">
+            Add AI where it creates leverage: after-hours calls, missed-call capture, overflow,
+            qualification, basic FAQs and appointment scheduling.
           </p>
           <ul class="checklist">
             <li>24/7 inbound coverage option</li>
@@ -312,138 +294,147 @@
     </div>
   </section>
 
-  <!-- ========================== Calculator ========================== -->
+  <!-- =========================== Calculator =========================== -->
   <section class="section" id="calculator" aria-labelledby="calc-title">
     <div class="shell">
-      <div class="section-head">
-        <span class="eyebrow">Revenue leak calculator</span>
+      <div class="head">
+        <p class="head__label">Revenue leak calculator</p>
         <h2 id="calc-title">What could your current funnel be leaving on the table?</h2>
         <p class="lede">Adjust your own numbers. This is an illustrative model, not a promise of results.</p>
       </div>
 
       <div class="calc" data-calc>
-        <form class="panel" novalidate>
-          <div class="panel__body">
-            <div class="field">
-              <div class="field__top">
-                <label class="field__label" for="calc-leads">Monthly leads</label>
-                <output class="field__out" for="calc-leads" data-mirror="leads"></output>
-              </div>
-              <input class="slider" type="range" id="calc-leads" min="20" max="1000" step="10" value="180">
-              <p class="field__hint">All inbound inquiries across every source.</p>
-              <p class="field__error" role="alert">Enter a value between 20 and 1,000.</p>
+        <form class="fields" novalidate>
+          <div class="field">
+            <div class="field__top">
+              <label class="field__label" for="calc-leads">Monthly leads</label>
+              <output class="field__out" for="calc-leads" data-mirror="leads"></output>
             </div>
-
-            <div class="field">
-              <div class="field__top">
-                <label class="field__label" for="calc-booking">Current booking rate</label>
-                <output class="field__out" for="calc-booking" data-mirror="booking" data-suffix="%"></output>
-              </div>
-              <input class="slider" type="range" id="calc-booking" min="5" max="95" step="1" value="35">
-              <p class="field__hint">Leads that become a booked consultation.</p>
-              <p class="field__error" role="alert">Enter a value between 5% and 95%.</p>
+            <input class="slider" type="range" id="calc-leads" min="20" max="1000" step="10" value="180">
+            <p class="field__hint">All inbound inquiries across every source.</p>
+            <p class="field__error" role="alert">Enter a value between 20 and 1,000.</p>
+          </div>
+          <div class="field">
+            <div class="field__top">
+              <label class="field__label" for="calc-booking">Current booking rate</label>
+              <output class="field__out" for="calc-booking" data-mirror="booking" data-suffix="%"></output>
             </div>
-
-            <div class="field">
-              <div class="field__top">
-                <label class="field__label" for="calc-show">Current show rate</label>
-                <output class="field__out" for="calc-show" data-mirror="show" data-suffix="%"></output>
-              </div>
-              <input class="slider" type="range" id="calc-show" min="20" max="100" step="1" value="70">
-              <p class="field__hint">Booked appointments that actually arrive.</p>
-              <p class="field__error" role="alert">Enter a value between 20% and 100%.</p>
+            <input class="slider" type="range" id="calc-booking" min="5" max="95" step="1" value="35">
+            <p class="field__hint">Leads that become a booked consultation.</p>
+            <p class="field__error" role="alert">Enter a value between 5% and 95%.</p>
+          </div>
+          <div class="field">
+            <div class="field__top">
+              <label class="field__label" for="calc-show">Current show rate</label>
+              <output class="field__out" for="calc-show" data-mirror="show" data-suffix="%"></output>
             </div>
-
-            <div class="field">
-              <div class="field__top">
-                <label class="field__label" for="calc-close">Consult-to-treatment rate</label>
-                <output class="field__out" for="calc-close" data-mirror="close" data-suffix="%"></output>
-              </div>
-              <input class="slider" type="range" id="calc-close" min="10" max="100" step="1" value="45">
-              <p class="field__hint">Consultations that convert to a paid treatment.</p>
-              <p class="field__error" role="alert">Enter a value between 10% and 100%.</p>
+            <input class="slider" type="range" id="calc-show" min="20" max="100" step="1" value="70">
+            <p class="field__hint">Booked appointments that actually arrive.</p>
+            <p class="field__error" role="alert">Enter a value between 20% and 100%.</p>
+          </div>
+          <div class="field">
+            <div class="field__top">
+              <label class="field__label" for="calc-close">Consult-to-treatment rate</label>
+              <output class="field__out" for="calc-close" data-mirror="close" data-suffix="%"></output>
             </div>
-
-            <div class="field">
-              <div class="field__top">
-                <label class="field__label" for="calc-value">Average first treatment value</label>
-                <output class="field__out" for="calc-value" data-mirror="value" data-prefix="$"></output>
-              </div>
-              <input class="slider" type="range" id="calc-value" min="100" max="5000" step="25" value="650">
-              <p class="field__hint">Revenue from the first treatment only.</p>
-              <p class="field__error" role="alert">Enter a value between $100 and $5,000.</p>
+            <input class="slider" type="range" id="calc-close" min="10" max="100" step="1" value="45">
+            <p class="field__hint">Consultations that convert to a paid treatment.</p>
+            <p class="field__error" role="alert">Enter a value between 10% and 100%.</p>
+          </div>
+          <div class="field">
+            <div class="field__top">
+              <label class="field__label" for="calc-value">Average first treatment value</label>
+              <output class="field__out" for="calc-value" data-mirror="value" data-prefix="$"></output>
             </div>
-
-            <div class="field">
-              <div class="field__top">
-                <label class="field__label" for="calc-lift">Modeled improvement</label>
-                <output class="field__out" for="calc-lift" data-mirror="lift" data-suffix="%"></output>
-              </div>
-              <input class="slider" type="range" id="calc-lift" min="0" max="50" step="1" value="15">
-              <p class="field__hint">Proportional lift applied to booking, show and conversion.</p>
-              <p class="field__error" role="alert">Enter a value between 0% and 50%.</p>
+            <input class="slider" type="range" id="calc-value" min="100" max="5000" step="25" value="650">
+            <p class="field__hint">Revenue from the first treatment only.</p>
+            <p class="field__error" role="alert">Enter a value between $100 and $5,000.</p>
+          </div>
+          <div class="field">
+            <div class="field__top">
+              <label class="field__label" for="calc-lift">Modeled improvement</label>
+              <output class="field__out" for="calc-lift" data-mirror="lift" data-suffix="%"></output>
             </div>
+            <input class="slider" type="range" id="calc-lift" min="0" max="50" step="1" value="15">
+            <p class="field__hint">Proportional lift applied to booking, show and conversion.</p>
+            <p class="field__error" role="alert">Enter a value between 0% and 50%.</p>
           </div>
         </form>
 
         <div class="result" role="region" aria-live="polite" aria-label="Modeled results">
-          <p class="result__label">Illustrative additional monthly first-treatment revenue</p>
+          <p class="mono">Illustrative additional monthly first-treatment revenue</p>
           <p class="result__value" data-out-delta>$0</p>
-          <p class="fine" style="margin-top: var(--space-6)">
+
+          <div class="table-scroll">
+            <table class="ledger">
+              <caption class="fine">Modeled monthly outcome at the settings on the left.</caption>
+              <thead>
+                <tr><th scope="col">Measure</th><th scope="col">Current</th><th scope="col">Improved</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Patients treated</th>
+                  <td data-out-current-patients>0</td>
+                  <td class="gain" data-out-improved-patients>0</td>
+                </tr>
+                <tr>
+                  <th scope="row">First-treatment revenue</th>
+                  <td data-out-current-revenue>$0</td>
+                  <td class="gain" data-out-improved-revenue>$0</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p class="fine">
             This model shows what happens when booking, show and conversion rates improve
-            proportionally. Actual results depend on traffic, offer, market, service mix
-            and execution.
+            proportionally. Actual results depend on traffic, offer, market, service mix and
+            execution.
           </p>
-          <dl class="result__grid">
-            <div class="result__cell"><dt>Current modeled patients</dt><dd data-out-current-patients>0</dd></div>
-            <div class="result__cell"><dt>Improved modeled patients</dt><dd data-out-improved-patients>0</dd></div>
-            <div class="result__cell"><dt>Current modeled revenue</dt><dd data-out-current-revenue>$0</dd></div>
-            <div class="result__cell"><dt>Improved modeled revenue</dt><dd data-out-improved-revenue>$0</dd></div>
-          </dl>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ======================== Implementation ======================== -->
+  <!-- ========================= Implementation ========================= -->
   <section class="section" aria-labelledby="impl-title">
     <div class="shell">
-      <div class="section-head">
-        <span class="eyebrow">Implementation</span>
+      <div class="head">
+        <p class="head__label">Implementation</p>
         <h2 id="impl-title">We don&rsquo;t drop templates into your account and disappear.</h2>
         <p class="lede">The system is built around how your practice actually sells, schedules and follows up.</p>
       </div>
 
       <ol class="steps">
         <li class="step">
-          <p class="step__meta">01 &mdash; Diagnose</p>
-          <h3 class="step__title">Revenue Audit</h3>
-          <p class="step__body">Map lead sources, response times, booking flow, no-shows, consultation follow-up, rebooking and reporting.</p>
+          <span class="step__n">01</span>
+          <span class="step__name">Diagnose &mdash; Revenue Audit</span>
+          <span class="step__body">Map lead sources, response times, booking flow, no-shows, consultation follow-up, rebooking and reporting.</span>
         </li>
         <li class="step">
-          <p class="step__meta">02 &mdash; Architect</p>
-          <h3 class="step__title">Build the Journey</h3>
-          <p class="step__body">Define pipelines, fields, triggers, workflows, calendars, call dispositions, ownership rules and handoffs.</p>
+          <span class="step__n">02</span>
+          <span class="step__name">Architect &mdash; Build the Journey</span>
+          <span class="step__body">Define pipelines, fields, triggers, workflows, calendars, call dispositions, ownership rules and handoffs.</span>
         </li>
         <li class="step">
-          <p class="step__meta">03 &mdash; Connect</p>
-          <h3 class="step__title">Integrate the Stack</h3>
-          <p class="step__body">Connect ads, forms, calendars, phone, SMS and the appropriate practice systems without forcing a rip-and-replace.</p>
+          <span class="step__n">03</span>
+          <span class="step__name">Connect &mdash; Integrate the Stack</span>
+          <span class="step__body">Connect ads, forms, calendars, phone, SMS and the appropriate practice systems without forcing a rip-and-replace.</span>
         </li>
         <li class="step">
-          <p class="step__meta">04 &mdash; Optimize</p>
-          <h3 class="step__title">Improve the Numbers</h3>
-          <p class="step__body">Use response, booking, show, conversion and retention data to find the next highest-value leak.</p>
+          <span class="step__n">04</span>
+          <span class="step__name">Optimize &mdash; Improve the Numbers</span>
+          <span class="step__body">Use response, booking, show, conversion and retention data to find the next highest-value leak.</span>
         </li>
       </ol>
     </div>
   </section>
 
-  <!-- ========================== Reporting ========================== -->
+  <!-- =========================== Reporting =========================== -->
   <section class="section" aria-labelledby="report-title">
     <div class="shell">
-      <div class="section-head">
-        <span class="eyebrow">What owners finally get</span>
+      <div class="head">
+        <p class="head__label">What owners finally get</p>
         <h2 id="report-title">One view of what happens after the lead.</h2>
         <p class="lede">
           Instead of &ldquo;we generated 200 leads,&rdquo; your weekly conversation becomes:
@@ -451,145 +442,93 @@
           happened, what objections blocked treatment, which patients came back and where
           revenue was recovered.
         </p>
-        <p class="fine">Illustrative dashboard metrics shown here; every implementation is configured to the practice.</p>
       </div>
 
-      <div class="tiles">
-        <div class="tile"><p class="tile__name">Response time</p><p class="tile__desc">By user / team / source</p></div>
-        <div class="tile"><p class="tile__name">Booking rate</p><p class="tile__desc">By service / campaign</p></div>
-        <div class="tile"><p class="tile__name">Show rate</p><p class="tile__desc">Booked &rarr; arrived</p></div>
-        <div class="tile"><p class="tile__name">Consult conversion</p><p class="tile__desc">Showed &rarr; treatment</p></div>
-        <div class="tile"><p class="tile__name">Reactivation</p><p class="tile__desc">Old database &rarr; new revenue</p></div>
-        <div class="tile"><p class="tile__name">CAC / revenue</p><p class="tile__desc">Where tracking allows</p></div>
+      <div class="table-scroll">
+        <table class="ledger">
+          <caption class="fine">Reported every week. Illustrative here; every implementation is configured to the practice.</caption>
+          <thead>
+            <tr><th scope="col">Measure</th><th scope="col" style="text-align:left">Cut by</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Response time</th><td style="text-align:left">By user / team / source</td></tr>
+            <tr><th scope="row">Booking rate</th><td style="text-align:left">By service / campaign</td></tr>
+            <tr><th scope="row">Show rate</th><td style="text-align:left">Booked &rarr; arrived</td></tr>
+            <tr><th scope="row">Consult conversion</th><td style="text-align:left">Showed &rarr; treatment</td></tr>
+            <tr><th scope="row">Reactivation</th><td style="text-align:left">Old database &rarr; new revenue</td></tr>
+            <tr><th scope="row">CAC / revenue</th><td style="text-align:left">Where tracking allows</td></tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </section>
 
-  <!-- ============================= FAQ ============================= -->
+  <!-- ============================== FAQ ============================== -->
   <section class="section" id="faq" aria-labelledby="faq-title">
     <div class="shell">
-      <div class="section-head">
-        <span class="eyebrow">FAQ</span>
+      <div class="head">
+        <p class="head__label">FAQ</p>
         <h2 id="faq-title">Questions med spa owners usually ask before changing anything.</h2>
       </div>
 
       <div class="faq">
         <div class="faq__item">
-          <h3>
-            <button class="faq__trigger" type="button" data-faq-trigger
-                    id="faq-1-trigger" aria-expanded="false" aria-controls="faq-1">
-              Do we have to replace our existing med spa software?
-              <span class="faq__icon" aria-hidden="true">+</span>
-            </button>
-          </h3>
+          <h3><button class="faq__trigger" type="button" data-faq-trigger id="faq-1-trigger" aria-expanded="false" aria-controls="faq-1">
+            Do we have to replace our existing med spa software?<span class="faq__icon" aria-hidden="true">+</span></button></h3>
           <div class="faq__panel" id="faq-1" role="region" aria-labelledby="faq-1-trigger" hidden>
-            <p>
-              No. The system is built as an operating layer on top of what you already run.
-              We connect to your existing ads, forms, calendars, phone and practice systems
-              rather than forcing a rip-and-replace.
-            </p>
+            <p>No. The system is built as an operating layer on top of what you already run. We connect to your existing ads, forms, calendars, phone and practice systems rather than forcing a rip-and-replace.</p>
           </div>
         </div>
-
         <div class="faq__item">
-          <h3>
-            <button class="faq__trigger" type="button" data-faq-trigger
-                    id="faq-2-trigger" aria-expanded="false" aria-controls="faq-2">
-              Do you run our ads too?
-              <span class="faq__icon" aria-hidden="true">+</span>
-            </button>
-          </h3>
+          <h3><button class="faq__trigger" type="button" data-faq-trigger id="faq-2-trigger" aria-expanded="false" aria-controls="faq-2">
+            Do you run our ads too?<span class="faq__icon" aria-hidden="true">+</span></button></h3>
           <div class="faq__panel" id="faq-2" role="region" aria-labelledby="faq-2-trigger" hidden>
-            <p>
-              Our core work is the revenue infrastructure that sits behind the ads. We feed
-              response, booking, show and conversion data back to whoever runs your media so
-              spend decisions are based on revenue rather than cost per lead.
-            </p>
+            <p>Our core work is the revenue infrastructure that sits behind the ads. We feed response, booking, show and conversion data back to whoever runs your media, so spend decisions are based on revenue rather than cost per lead.</p>
           </div>
         </div>
-
         <div class="faq__item">
-          <h3>
-            <button class="faq__trigger" type="button" data-faq-trigger
-                    id="faq-3-trigger" aria-expanded="false" aria-controls="faq-3">
-              Will AI replace our front desk?
-              <span class="faq__icon" aria-hidden="true">+</span>
-            </button>
-          </h3>
+          <h3><button class="faq__trigger" type="button" data-faq-trigger id="faq-3-trigger" aria-expanded="false" aria-controls="faq-3">
+            Will AI replace our front desk?<span class="faq__icon" aria-hidden="true">+</span></button></h3>
           <div class="faq__panel" id="faq-3" role="region" aria-labelledby="faq-3-trigger" hidden>
-            <p>
-              No. AI is an optional coverage layer for after-hours calls, missed-call capture
-              and overflow. It works alongside human operations and escalates to your staff
-              when a conversation needs a person.
-            </p>
+            <p>No. AI is an optional coverage layer for after-hours calls, missed-call capture and overflow. It works alongside human operations and escalates to your staff when a conversation needs a person.</p>
           </div>
         </div>
-
         <div class="faq__item">
-          <h3>
-            <button class="faq__trigger" type="button" data-faq-trigger
-                    id="faq-4-trigger" aria-expanded="false" aria-controls="faq-4">
-              Can you help with no-shows?
-              <span class="faq__icon" aria-hidden="true">+</span>
-            </button>
-          </h3>
+          <h3><button class="faq__trigger" type="button" data-faq-trigger id="faq-4-trigger" aria-expanded="false" aria-controls="faq-4">
+            Can you help with no-shows?<span class="faq__icon" aria-hidden="true">+</span></button></h3>
           <div class="faq__panel" id="faq-4" role="region" aria-labelledby="faq-4-trigger" hidden>
-            <p>
-              Yes. Confirmations, reminders and low-friction rescheduling protect the booked
-              appointment, and any missed appointment triggers a recovery journey instead of
-              becoming a dead opportunity.
-            </p>
+            <p>Yes. Confirmations, reminders and low-friction rescheduling protect the booked appointment, and any missed appointment triggers a recovery journey instead of becoming a dead opportunity.</p>
           </div>
         </div>
-
         <div class="faq__item">
-          <h3>
-            <button class="faq__trigger" type="button" data-faq-trigger
-                    id="faq-5-trigger" aria-expanded="false" aria-controls="faq-5">
-              Can the system reactivate old patients?
-              <span class="faq__icon" aria-hidden="true">+</span>
-            </button>
-          </h3>
+          <h3><button class="faq__trigger" type="button" data-faq-trigger id="faq-5-trigger" aria-expanded="false" aria-controls="faq-5">
+            Can the system reactivate old patients?<span class="faq__icon" aria-hidden="true">+</span></button></h3>
           <div class="faq__panel" id="faq-5" role="region" aria-labelledby="faq-5-trigger" hidden>
-            <p>
-              Yes. Past patients and old leads are segmented by relationship, prior service
-              and timing, then receive context-aware follow-up rather than a single untargeted
-              blast.
-            </p>
+            <p>Yes. Past patients and old leads are segmented by relationship, prior service and timing, then receive context-aware follow-up rather than a single untargeted blast.</p>
           </div>
         </div>
-
         <div class="faq__item">
-          <h3>
-            <button class="faq__trigger" type="button" data-faq-trigger
-                    id="faq-6-trigger" aria-expanded="false" aria-controls="faq-6">
-              What about HIPAA and patient privacy?
-              <span class="faq__icon" aria-hidden="true">+</span>
-            </button>
-          </h3>
+          <h3><button class="faq__trigger" type="button" data-faq-trigger id="faq-6-trigger" aria-expanded="false" aria-controls="faq-6">
+            What about HIPAA and patient privacy?<span class="faq__icon" aria-hidden="true">+</span></button></h3>
           <div class="faq__panel" id="faq-6" role="region" aria-labelledby="faq-6-trigger" hidden>
-            <p>
-              Privacy requirements are reviewed before launch and workflows are configured to
-              limit what patient information is stored and transmitted. Bring your compliance
-              advisor into the audit and we will scope the build around their guidance.
-            </p>
+            <p>Privacy requirements are reviewed before launch, and workflows are configured to limit what patient information is stored and transmitted. Bring your compliance advisor into the audit and we will scope the build around their guidance.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ============================ CTA ============================ -->
-  <section class="section section--tight" id="book" aria-labelledby="book-title">
+  <!-- ============================ Closing ============================ -->
+  <section class="section section--plain" id="book" aria-labelledby="book-title">
     <div class="shell">
-      <div class="cta-band">
-        <span class="eyebrow">Next step</span>
+      <div class="close">
+        <p class="mono" style="color:inherit;opacity:.7">Next step</p>
         <h2 id="book-title">Find the leaks before you spend another dollar on traffic.</h2>
         <p class="lede">
           A revenue audit maps your lead sources, response times, booking flow, no-shows,
           consult follow-up and reporting &mdash; then shows you where the money is going.
         </p>
-        <div class="cta-band__actions">
+        <div class="actions">
           <a class="btn btn--primary" href="#book">Book My Revenue Audit</a>
           <a class="btn btn--secondary" href="#system">See How the System Works</a>
         </div>
@@ -603,21 +542,14 @@
   <div class="shell">
     <div class="footer__grid">
       <div>
-        <a class="brand" href="#top">
-          <span class="brand__mark" aria-hidden="true">OS</span>
-          <span class="brand__name">
-            Med Spa Revenue OS
-            <span class="brand__sub">Built for U.S. med spas</span>
-          </span>
-        </a>
-        <p class="fine" style="margin-top: var(--space-6)">
-          The operating layer that connects ads, front desk, booking, follow-up and
-          reporting so fewer patients are lost between steps.
+        <p class="brand" style="margin-bottom:var(--space-6)">Med&nbsp;Spa Revenue&nbsp;OS</p>
+        <p class="fine">
+          The operating layer that connects ads, front desk, booking, follow-up and reporting,
+          so fewer patients are lost between steps.
         </p>
       </div>
-
-      <nav aria-labelledby="footer-nav-heading">
-        <p class="footer__heading" id="footer-nav-heading">Explore</p>
+      <nav aria-labelledby="f-explore">
+        <p class="mono footer__heading" id="f-explore">Explore</p>
         <ul class="footer__links">
           <li><a class="footer__link" href="#system">The System</a></li>
           <li><a class="footer__link" href="#calculator">Revenue Leak Calculator</a></li>
@@ -625,19 +557,17 @@
           <li><a class="footer__link" href="#book">Book Audit</a></li>
         </ul>
       </nav>
-
-      <nav aria-labelledby="footer-legal-heading">
-        <p class="footer__heading" id="footer-legal-heading">Legal</p>
+      <nav aria-labelledby="f-legal">
+        <p class="mono footer__heading" id="f-legal">Legal</p>
         <ul class="footer__links">
           <li><a class="footer__link" href="#book">Privacy Policy</a></li>
           <li><a class="footer__link" href="#book">Terms of Service</a></li>
         </ul>
       </nav>
     </div>
-
     <div class="footer__base">
-      <p>&copy; <span id="year">2026</span> Med Spa Revenue OS. All rights reserved.</p>
-      <p>Figures shown across this site are illustrative models, not guarantees of results.</p>
+      <p>&copy; 2026 Med Spa Revenue OS. All rights reserved.</p>
+      <p>Figures shown are illustrative models, not guarantees of results.</p>
     </div>
   </div>
 </footer>
